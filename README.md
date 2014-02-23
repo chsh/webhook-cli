@@ -1,6 +1,7 @@
-# Webhook::Cli
+# Webhook::CLI
 
-TODO: Write a gem description
+Webhook::CLIは、コマンドラインからwebhookを実行できるツールです。
+rubyコード中でも使えます。
 
 ## Installation
 
@@ -18,7 +19,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+~~~
+$ webhook url json-file
+~~~
+
+This command posts payload=json-file-content to specified url.
 
 ## Contributing
 
