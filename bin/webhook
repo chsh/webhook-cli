@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'webhook/cli'
+
+if ARGV.length < 2
+  puts "usage: #{$0} url json-file"
+  exit 1
+end
+
+Webhook::CLI::Poster.post ARGV[0], ARGV[1]
