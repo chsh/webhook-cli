@@ -40,6 +40,14 @@ module Webhook
       def verify_json_content(json)
         JSON.parse(json)
       end
+      def json_content?(json)
+        begin
+          JSON.parse(json)
+        rescue
+          false
+        end
+        true
+      end
     end
   end
 end
